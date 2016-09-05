@@ -29,8 +29,6 @@ public class InputToMovement : MonoBehaviour
         rigidbodyXZ.y = 0;
         Vector3 movementXZ = Vector3.MoveTowards(rigidbodyXZ, movementInput * speed, Time.deltaTime * acceleration);
         Vector3 newVel = new Vector3(movementXZ.x, rigid.velocity.y, movementXZ.z);
-        
-        Vector3 start = transform.position + Vector3.up * 0.5f;
 
         rigid.velocity = newVel;
 

@@ -10,14 +10,20 @@ public class EnemySpawner : MonoBehaviour {
     protected Transform healthBarPrefab;
 
     [SerializeField]
+    protected Transform[] deathActions;
+
+    [SerializeField]
     protected float maxHealth = 1f;
 
     public Transform Build(Vector3 position, Quaternion facing, Transform player)
     {
         Transform result = Instantiate(enemyPrefab, position, facing) as Transform;
         Health health = result.GetComponent<Health>();
-        Transform healthBar = Instantiate(healthBarPrefab, health.healthDisplayHolder) as Transform;
-        healthBar.Reset();
+        (Instantiate(healthBarPrefab, health.healthDisplayHolder) as Transform).Reset();
+        foreach (Transform deathAction in deathActions)
+        {
+            (Instantiate(deathAction, health.deathActionsHolder) as Transform).Reset();
+        }
         health.Construct();
         health.SetMaxHealth(maxHealth);
         result.GetComponent<EnemyNavigation>().Construct(player);

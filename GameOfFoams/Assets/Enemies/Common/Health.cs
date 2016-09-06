@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using System.Collections.Generic;
 
 public class Health : MonoBehaviour {
 
@@ -9,6 +9,8 @@ public class Health : MonoBehaviour {
     /// </summary>
     [SerializeField]
     public Transform healthDisplayHolder;
+
+    public Transform deathActionsHolder { get { return this.transform; } }
 
     [SerializeField]
     protected float maxHealth;
@@ -23,6 +25,7 @@ public class Health : MonoBehaviour {
         {
             hitpoints = value;
             HealthPercentage = hitpoints / maxHealth;
+            CheckDeath();
         }
     }
 
@@ -38,9 +41,12 @@ public class Health : MonoBehaviour {
         }
     }
 
+    private IDeathAction[] deathActions;
+
     public void Construct()
     {
         healthDisplay = healthDisplayHolder.GetComponentInChildren<IHealthDisplay>();
+        deathActions = deathActionsHolder.GetComponentsInChildren<IDeathAction>();
         Hitpoints = startingHealthPercentage * maxHealth;
     }
 
@@ -50,14 +56,28 @@ public class Health : MonoBehaviour {
         Hitpoints = maxHealth;
     }
 
-    public bool IsDead() { return hitpoints <= 0; }
-
     public void Heal(float amount) { Hitpoints = Mathf.Min(maxHealth, hitpoints + amount); }
 
     public void Damage(float amount) { Hitpoints = Mathf.Max(0, hitpoints - amount); }
+
+    public void CheckDeath()
+    {
+        if (hitpoints <= 0)
+        {
+            foreach (IDeathAction death in deathActions)
+            {
+                death.Die();
+            }
+        }
+    }
 }
 
 public interface IHealthDisplay
 {
     float healthPercentage { set; }
+}
+
+public interface IDeathAction
+{
+    void Die();
 }

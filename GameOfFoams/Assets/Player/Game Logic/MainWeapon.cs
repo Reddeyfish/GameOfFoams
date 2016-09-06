@@ -18,6 +18,7 @@ public class MainWeapon : MonoBehaviour {
     [SerializeField]
     protected float cooldownSecs;
 
+    IInput input;
     float readyTime = 0;
     int layermask;
 
@@ -25,12 +26,17 @@ public class MainWeapon : MonoBehaviour {
     {
         layermask = LayerMask.GetMask(Tags.Layers.EnemyColliders);
     }
+
+    void Start()
+    {
+        input = GetComponentInParent<IInput>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
         if (Time.time > readyTime)
         {
-            if (Input.GetMouseButton(0)) //move to an input script
+            if (input.basicAttack)
             {
                 Fire();
             }

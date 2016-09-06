@@ -6,6 +6,7 @@ public class InputToMovement : MonoBehaviour
 {
     Rigidbody rigid;
     Vector3 movementInput;
+    IInput input;
 
     [SerializeField]
     protected float speed;
@@ -21,10 +22,15 @@ public class InputToMovement : MonoBehaviour
         rigid = GetComponent<Rigidbody>();
     }
 
+    void Start()
+    {
+        input = GetComponent<IInput>();
+    }
+
     void Update()
     {
 
-        Vector3 movementInput = (transform.right * Input.GetAxis("Horizontal")) + (transform.forward * Input.GetAxis("Vertical")); //pull from input script
+        Vector3 movementInput = input.movementInput;
         Vector3 rigidbodyXZ = rigid.velocity;
         rigidbodyXZ.y = 0;
         Vector3 movementXZ = Vector3.MoveTowards(rigidbodyXZ, movementInput * speed, Time.deltaTime * acceleration);
@@ -34,14 +40,14 @@ public class InputToMovement : MonoBehaviour
 
         // horizontal mouse look rotates transform around y axis
         Vector3 angles = rigid.rotation.eulerAngles;
-        angles.y += Input.GetAxis("HorizontalMouse");
+        angles.y += input.horizontalCameraInput;
         Quaternion rotation = Quaternion.Euler(angles);
         rigid.rotation = rotation;
 
         // vertical mouse look rotates camera around x axis
         angles = cameraRotator.rotation.eulerAngles;
         if (angles.x > 180.0f) angles.x -= 360.0f;
-        angles.x -= Input.GetAxis("VerticalMouse");
+        angles.x -= input.verticalCameraInput;
         angles.x = Mathf.Clamp(angles.x, -89.0f, 89.0f);
         rotation = Quaternion.Euler(angles);
         cameraRotator.rotation = rotation;

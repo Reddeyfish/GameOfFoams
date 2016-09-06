@@ -8,11 +8,13 @@ public static class Tags
 {
     public const string player = "Player";
 
-    //public static class Axis
-    //{
-    //    //public const string horizontal = "Horizontal";
-    //    //public const string vertical = "Vertical";
-    //}
+    public static class Axis
+    {
+        public const string horizontal = "Horizontal";
+        public const string vertical = "Vertical";
+        public const string horizontalMouse = "HorizontalMouse";
+        public const string verticalMouse = "VerticalMouse";
+    }
 
     public static class Layers
     {

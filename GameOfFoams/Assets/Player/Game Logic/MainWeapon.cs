@@ -1,0 +1,76 @@
+﻿using UnityEngine;
+using System.Collections.Generic;
+
+public class MainWeapon : MonoBehaviour {
+
+    [SerializeField]
+    protected float damage;
+
+    [SerializeField]
+    protected Vector2 boxHalfDimensions;
+
+    [SerializeField]
+    protected float arcRadius;
+
+    [SerializeField]
+    protected float totalArcAngleDegrees;
+
+    [SerializeField]
+    protected float cooldownSecs;
+
+    float readyTime = 0;
+    int layermask;
+
+    void Awake()
+    {
+        layermask = LayerMask.GetMask(Tags.Layers.EnemyColliders);
+    }
+	
+	// Update is called once per frame
+	void Update () {
+        if (Time.time > readyTime)
+        {
+            if (Input.GetMouseButton(0)) //move to an input script
+            {
+                Fire();
+            }
+        }
+	}
+
+    void Fire()
+    {
+        readyTime = Time.time + cooldownSecs;
+        HashSet<Collider> hits = RaycastArc(transform.position, transform.forward, boxHalfDimensions, arcRadius, totalArcAngleDegrees, layermask);
+        foreach(Collider hit in hits)
+        {
+            hit.GetComponentInParent<Health>().Damage(damage);
+        }
+    }
+
+    static HashSet<Collider> RaycastArc(Vector3 origin, Vector3 direction, Vector2 boxHalfDimensions, float radius, float totalArcAngleDegrees, int layermask)
+    {
+        direction.y = 0;
+        HashSet<Collider> result = new HashSet<Collider>();
+        float boxHalfAngleCoverage = Mathf.Rad2Deg * Mathf.Atan2(boxHalfDimensions.x, radius);
+
+        for (float angle = totalArcAngleDegrees / 2; angle >= boxHalfAngleCoverage; angle -= 2 * boxHalfAngleCoverage)
+        {
+            result.UnionWith(boxCast(origin, direction, boxHalfDimensions, radius, angle, layermask));
+            result.UnionWith(boxCast(origin, direction, boxHalfDimensions, radius, -angle, layermask));
+        }
+        return result;
+    }
+
+    static Collider[] boxCast(Vector3 origin, Vector3 centerDirection, Vector2 boxHalfDimensions, float radius, float angleDegrees, int layermask)
+    {
+        Quaternion rotationOffset = Quaternion.AngleAxis(angleDegrees, Vector3.up);
+        Vector3 direction = rotationOffset * centerDirection;
+        RaycastHit[] results = Physics.BoxCastAll(origin, boxHalfDimensions, direction, Quaternion.LookRotation(direction), radius, layermask);
+        Collider[] returnValue = new Collider[results.Length];
+        for (int i = 0; i < results.Length; i++)
+        {
+            returnValue[i] = results[i].collider;
+        }
+        return returnValue;
+    }
+}

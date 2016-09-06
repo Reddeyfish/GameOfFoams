@@ -13,11 +13,10 @@ public class Health : MonoBehaviour {
     [SerializeField]
     protected float maxHealth;
 
-    [SerializeField]
-    [Range(0, 1)]
+    [SerializeField, Range(0, 1)]
     protected float startingHealthPercentage;
 
-    [ReadOnly]
+    [SerializeField, ReadOnly]
     private float hitpoints;
     public float Hitpoints { get { return hitpoints; }
         set
@@ -48,7 +47,7 @@ public class Health : MonoBehaviour {
     public void SetMaxHealth(float maxHealth)
     {
         this.maxHealth = maxHealth;
-        Hitpoints = Mathf.Min(Hitpoints, maxHealth);
+        Hitpoints = maxHealth;
     }
 
     public bool IsDead() { return hitpoints <= 0; }

@@ -44,7 +44,6 @@ public abstract class AbstractEnemyAI : MonoBehaviour
             : base(stateMachine)
         {
             stateMachine.navigation.SeekPlayer();
-            Debug.Log("HIT");
             aggroLossTime = Time.time + stateMachine.aiParameters.aggroTime;
         }
 
@@ -60,6 +59,29 @@ public abstract class AbstractEnemyAI : MonoBehaviour
         }
 
         public override void OnExit() { }
+    }
+
+    public class SeekingQueenAIState : AIState
+    {
+        public SeekingQueenAIState(AbstractEnemyAI stateMachine)
+            : base(stateMachine)
+        {
+            stateMachine.navigation.SeekQueen();
+        }
+
+        public override void Update()
+        {
+            stateMachine.navigation.SeekQueen();
+        }
+
+        public override void OnExit() { }
+
+        public override void OnSuspend() { }
+
+        public override void OnResume()
+        {
+            Update();
+        }
     }
 
     public class IdleState : AIState
@@ -119,13 +141,12 @@ public class BasicEnemyAI : AbstractEnemyAI
     {
         health = GetComponent<Health>();
         navigation = GetComponent<EnemyNavigation>();
-        rootState = new IdleState(this);
+        rootState = new SeekingQueenAIState(this);
         health.OnHitPublisher += OnHit;
     }
 
     protected void OnHit(HitData data)
     {
-        Debug.Log("Hit");
         pushNewState(new SeekingPlayerAIState(this));
     }
 

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Assertions;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
@@ -35,7 +36,7 @@ public class Health : MonoBehaviour, ITeamReference {
         }
     }
 
-    public event OnHit OnHitPublisher;
+    public event OnHit OnHitPublisher = delegate {};
 
     private IHealthDisplay healthDisplay;
 
@@ -76,10 +77,12 @@ public class Health : MonoBehaviour, ITeamReference {
     /// <returns></returns>
     public bool Damage(float amount, ITeamReference teamReference)
     {
+        Assert.IsNotNull(teamReference);
         if (teamReference.Team != Team)
         {
             Damage(amount);
-            OnHitPublisher(new HitData(amount, teamReference));
+            HitData data = new HitData(amount, teamReference);
+            OnHitPublisher(data);
             return true;
         }
         return false;

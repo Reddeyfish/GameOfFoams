@@ -8,15 +8,17 @@ public class EnemyNavigation : MonoBehaviour {
     NavMeshAgent navAgent;
 
     Transform player;
+    Transform queen;
 
 	// Use this for initialization
 	void Start () {
         navAgent = GetComponent<NavMeshAgent>();
 	}
 
-    public EnemyNavigation Construct(Transform player)
+    public EnemyNavigation Construct(Transform player, Transform queen)
     {
         this.player = player;
+        this.queen = queen;
         return this;
     }
 
@@ -26,6 +28,11 @@ public class EnemyNavigation : MonoBehaviour {
     public void SeekPlayer()
     {
         navAgent.SetDestination(player.position);
+    }
+
+    public void SeekQueen()
+    {
+        navAgent.SetDestination(queen.position);
     }
 
     public void ClearSeeking()

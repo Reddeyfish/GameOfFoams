@@ -58,6 +58,7 @@ public class MainWeapon : MonoBehaviour {
     static HashSet<Collider> RaycastArc(Vector3 origin, Vector3 direction, Vector2 boxHalfDimensions, float radius, float totalArcAngleDegrees, int layermask)
     {
         direction.y = 0;
+        direction.Normalize();
         HashSet<Collider> result = new HashSet<Collider>();
         float boxHalfAngleCoverage = Mathf.Rad2Deg * Mathf.Atan2(boxHalfDimensions.x, radius);
 

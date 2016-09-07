@@ -21,7 +21,7 @@ public class PlayerSpawner : MonoBehaviour {
     [SerializeField]
     protected Bindings bindings;
 
-    public Transform Construct(Vector3 playerPosition, Quaternion playerFacing)
+    public Transform Build(Vector3 playerPosition, Quaternion playerFacing)
     {
         Transform result = Instantiate(playerPrefab, playerPosition, playerFacing) as Transform;
         IInput input;

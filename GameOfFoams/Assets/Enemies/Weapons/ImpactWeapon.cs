@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Assertions;
 using System.Collections.Generic;
 
 public class ImpactWeapon : MonoBehaviour {
@@ -16,6 +17,7 @@ public class ImpactWeapon : MonoBehaviour {
     void Start()
     {
         teamReference = GetComponentInParent<ITeamReference>();
+        Assert.IsNotNull(teamReference);
     }
 
     void OnTriggerEnter(Collider coll)

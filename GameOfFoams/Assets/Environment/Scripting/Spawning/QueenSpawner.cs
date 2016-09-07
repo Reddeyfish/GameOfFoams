@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemySpawner : MonoBehaviour {
+public class QueenSpawner : MonoBehaviour
+{
 
     [SerializeField]
-    protected Transform enemyPrefab;
+    protected Transform queenPrefab;
 
     [SerializeField]
     protected Transform healthBarPrefab;
@@ -13,14 +14,11 @@ public class EnemySpawner : MonoBehaviour {
     protected Transform[] deathActions;
 
     [SerializeField]
-    protected Transform[] weapons;
-
-    [SerializeField]
     protected float maxHealth = 1f;
 
-    public Transform Build(Vector3 position, Quaternion facing, Transform player, Transform queen)
+    public Transform Build(Vector3 position, Quaternion facing)
     {
-        Transform result = Instantiate(enemyPrefab, position, facing) as Transform;
+        Transform result = Instantiate(queenPrefab, position, facing) as Transform;
         Health health = result.GetComponent<Health>();
         (Instantiate(healthBarPrefab, health.healthDisplayHolder) as Transform).Reset();
         foreach (Transform deathAction in deathActions)
@@ -29,12 +27,6 @@ public class EnemySpawner : MonoBehaviour {
         }
         health.Construct();
         health.SetMaxHealth(maxHealth);
-        result.GetComponent<EnemyNavigation>().Construct(player, queen);
-
-        foreach (Transform weapon in weapons)
-        {
-            (Instantiate(weapon, result) as Transform).Reset();
-        }
 
         return result;
     }

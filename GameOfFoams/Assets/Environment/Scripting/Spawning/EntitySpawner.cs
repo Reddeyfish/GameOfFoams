@@ -7,18 +7,25 @@ using System.Collections;
 public class EntitySpawner : MonoBehaviour {
 
     Transform player;
+    Transform queen;
 
 	// Use this for initialization
 	void Awake () {
         PlayerSpawner playerSpawner = GetComponentInChildren<PlayerSpawner>();
-        player = playerSpawner.Construct(Vector3.zero, Quaternion.identity);
+        player = playerSpawner.Build(Vector3.zero, Quaternion.identity);
+
+        Vector3 queenPosition = Random.insideUnitCircle * 10;
+        Vector3 worldSpaceQueenPosition = new Vector3(queenPosition.x, 0, queenPosition.y);
+
+        QueenSpawner queenSpawner = GetComponentInChildren<QueenSpawner>();
+        queen = queenSpawner.Build(worldSpaceQueenPosition, Quaternion.identity);
 
         //Temporary, until wave spawning logic is set up
         foreach (EnemySpawner enemySpawner in GetComponentsInChildren<EnemySpawner>())
         {
             Vector2 enemyPosition = Random.insideUnitCircle * 30;
             Vector3 worldSpaceEnemyPosition = new Vector3(enemyPosition.x, 0, enemyPosition.y);
-            enemySpawner.Build(worldSpaceEnemyPosition, Quaternion.identity, player);
+            enemySpawner.Build(worldSpaceEnemyPosition, Quaternion.identity, player, queen);
         }
 	}
 }

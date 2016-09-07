@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class Health : MonoBehaviour, ITeamReference {
 
+    public delegate void OnHit(HitData data);
+
     /// <summary>
     /// Allows prefabs to be combined at runtime. (health bar prefab can't be nested at build-time)
     /// </summary>
@@ -25,13 +27,15 @@ public class Health : MonoBehaviour, ITeamReference {
     [SerializeField, ReadOnly]
     private float hitpoints;
     public float Hitpoints { get { return hitpoints; }
-        set
+        private set
         {
             hitpoints = value;
             HealthPercentage = hitpoints / maxHealth;
             CheckDeath();
         }
     }
+
+    public event OnHit OnHitPublisher;
 
     private IHealthDisplay healthDisplay;
 
@@ -64,11 +68,18 @@ public class Health : MonoBehaviour, ITeamReference {
 
     public void Damage(float amount) { Hitpoints = Mathf.Max(0, hitpoints - amount); }
 
+    /// <summary>
+    /// If you don't know which one to use, use this one
+    /// </summary>
+    /// <param name="amount"></param>
+    /// <param name="teamReference"></param>
+    /// <returns></returns>
     public bool Damage(float amount, ITeamReference teamReference)
     {
         if (teamReference.Team != Team)
         {
             Damage(amount);
+            OnHitPublisher(new HitData(amount, teamReference));
             return true;
         }
         return false;
@@ -83,6 +94,18 @@ public class Health : MonoBehaviour, ITeamReference {
                 death.Die();
             }
         }
+    }
+}
+
+public class HitData
+{
+    public readonly float damage;
+    public readonly ITeamReference source;
+
+    public HitData(float damage, ITeamReference source)
+    {
+        this.damage = damage;
+        this.source = source;
     }
 }
 

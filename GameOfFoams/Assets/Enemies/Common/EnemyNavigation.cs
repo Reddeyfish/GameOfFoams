@@ -12,7 +12,6 @@ public class EnemyNavigation : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         navAgent = GetComponent<NavMeshAgent>();
-        SeekPlayer();
 	}
 
     public EnemyNavigation Construct(Transform player)
@@ -27,5 +26,10 @@ public class EnemyNavigation : MonoBehaviour {
     public void SeekPlayer()
     {
         navAgent.SetDestination(player.position);
+    }
+
+    public void ClearSeeking()
+    {
+        navAgent.ResetPath();
     }
 }

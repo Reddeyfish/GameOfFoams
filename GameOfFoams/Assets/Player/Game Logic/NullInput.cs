@@ -1,13 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface IInput
+public interface IWeaponsInput
+{
+    bool basicAttack { get; }
+}
+
+public interface IInput : IWeaponsInput
 {
     void Construct(Bindings bindings);
     Vector3 movementInput { get; }
     float horizontalCameraInput { get; }
     float verticalCameraInput { get; }
-    bool basicAttack { get; }
+    
 }
 
 [System.Serializable]

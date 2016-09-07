@@ -13,6 +13,9 @@ public class EnemySpawner : MonoBehaviour {
     protected Transform[] deathActions;
 
     [SerializeField]
+    protected Transform[] weapons;
+
+    [SerializeField]
     protected float maxHealth = 1f;
 
     public Transform Build(Vector3 position, Quaternion facing, Transform player)
@@ -27,6 +30,12 @@ public class EnemySpawner : MonoBehaviour {
         health.Construct();
         health.SetMaxHealth(maxHealth);
         result.GetComponent<EnemyNavigation>().Construct(player);
+
+        foreach (Transform weapon in weapons)
+        {
+            (Instantiate(weapon, result) as Transform).Reset();
+        }
+
         return result;
     }
 }

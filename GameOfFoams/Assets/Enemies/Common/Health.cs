@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class Health : MonoBehaviour {
+public class Health : MonoBehaviour, ITeamReference {
 
     /// <summary>
     /// Allows prefabs to be combined at runtime. (health bar prefab can't be nested at build-time)
@@ -17,6 +17,10 @@ public class Health : MonoBehaviour {
 
     [SerializeField, Range(0, 1)]
     protected float startingHealthPercentage;
+
+    [SerializeField]
+    protected Team team;
+    public Team Team { get { return team; } set { team = value; } }
 
     [SerializeField, ReadOnly]
     private float hitpoints;
@@ -60,6 +64,16 @@ public class Health : MonoBehaviour {
 
     public void Damage(float amount) { Hitpoints = Mathf.Max(0, hitpoints - amount); }
 
+    public bool Damage(float amount, ITeamReference teamReference)
+    {
+        if (teamReference.Team != Team)
+        {
+            Damage(amount);
+            return true;
+        }
+        return false;
+    }
+
     public void CheckDeath()
     {
         if (hitpoints <= 0)
@@ -70,6 +84,13 @@ public class Health : MonoBehaviour {
             }
         }
     }
+}
+
+public enum Team { PLAYER, ENEMY}
+
+public interface ITeamReference
+{
+    Team Team { get; }
 }
 
 public interface IHealthDisplay

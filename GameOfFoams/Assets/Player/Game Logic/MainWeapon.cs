@@ -19,6 +19,7 @@ public class MainWeapon : MonoBehaviour {
     protected float cooldownSecs;
 
     IInput input;
+    ITeamReference teamReference;
     float readyTime = 0;
     int layermask;
 
@@ -30,6 +31,7 @@ public class MainWeapon : MonoBehaviour {
     void Start()
     {
         input = GetComponentInParent<IInput>();
+        teamReference = GetComponentInParent<ITeamReference>();
     }
 	
 	// Update is called once per frame
@@ -49,7 +51,7 @@ public class MainWeapon : MonoBehaviour {
         HashSet<Collider> hits = RaycastArc(transform.position, transform.forward, boxHalfDimensions, arcRadius, totalArcAngleDegrees, layermask);
         foreach(Collider hit in hits)
         {
-            hit.GetComponentInParent<Health>().Damage(damage);
+            hit.GetComponentInParent<Health>().Damage(damage, teamReference);
         }
     }
 

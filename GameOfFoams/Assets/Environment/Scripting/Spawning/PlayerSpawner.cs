@@ -10,6 +10,15 @@ public class PlayerSpawner : MonoBehaviour {
     protected Transform basicAttackPrefab;
 
     [SerializeField]
+    protected Transform healthBarPrefab;
+
+    [SerializeField]
+    protected Transform[] deathActions;
+
+    [SerializeField]
+    protected float maxHealth = 1f;
+
+    [SerializeField]
     protected Bindings bindings;
 
     public Transform Construct(Vector3 playerPosition, Quaternion playerFacing)
@@ -30,6 +39,17 @@ public class PlayerSpawner : MonoBehaviour {
 
         }
         input.Construct(bindings);
+
+        Health health = result.GetComponent<Health>();
+        health.healthDisplayHolder = (Instantiate(healthBarPrefab) as Transform);
+        health.healthDisplayHolder.Reset();
+        foreach (Transform deathAction in deathActions)
+        {
+            (Instantiate(deathAction, health.deathActionsHolder) as Transform).Reset();
+        }
+        health.Construct();
+        health.SetMaxHealth(maxHealth);
+
         (Instantiate(basicAttackPrefab, result.Find("WeaponsHolder")) as Transform).Reset();
         return result;
     }

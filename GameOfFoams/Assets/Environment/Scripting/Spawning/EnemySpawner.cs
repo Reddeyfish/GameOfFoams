@@ -31,9 +31,11 @@ public class EnemySpawner : MonoBehaviour {
         health.SetMaxHealth(maxHealth);
         result.GetComponent<EnemyNavigation>().Construct(player, queen);
 
+        Transform weaponsHolder = result.Find("WeaponsHolder");
+
         foreach (Transform weapon in weapons)
         {
-            (Instantiate(weapon, result) as Transform).Reset();
+            (Instantiate(weapon, weaponsHolder) as Transform).Reset();
         }
 
         return result;

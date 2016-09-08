@@ -27,5 +27,12 @@ public class EntitySpawner : MonoBehaviour {
             Vector3 worldSpaceEnemyPosition = new Vector3(enemyPosition.x, 0, enemyPosition.y);
             enemySpawner.Build(worldSpaceEnemyPosition, Quaternion.identity, player, queen);
         }
+
+        foreach (BarrierSpawner enemySpawner in GetComponentsInChildren<BarrierSpawner>())
+        {
+            Vector2 barrierPosition = Random.insideUnitCircle * 15;
+            Vector3 worldSpaceBarrierPosition = new Vector3(barrierPosition.x, 0, barrierPosition.y);
+            enemySpawner.Build(worldSpaceBarrierPosition, Quaternion.identity);
+        }
 	}
 }

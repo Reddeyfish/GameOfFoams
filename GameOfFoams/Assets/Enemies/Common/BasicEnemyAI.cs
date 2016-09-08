@@ -84,6 +84,37 @@ public abstract class AbstractEnemyAI : MonoBehaviour
         }
     }
 
+    public class SeekingAggroAIState : AIState
+    {
+        Aggro target;
+
+        public SeekingAggroAIState(AbstractEnemyAI stateMachine, Aggro target)
+            : base(stateMachine)
+        {
+            stateMachine.navigation.SeekQueen();
+            this.target = target;
+        }
+
+        public override void Update()
+        {
+            if (target == null)
+            {
+                stateMachine.popState(this);
+                return;
+            }
+            stateMachine.navigation.Seek(target.transform.position);
+        }
+
+        public override void OnExit() { }
+
+        public override void OnSuspend() { }
+
+        public override void OnResume()
+        {
+            Update();
+        }
+    }
+
     public class IdleState : AIState
     {
         public IdleState(AbstractEnemyAI stateMachine) : base(stateMachine) { stateMachine.navigation.ClearSeeking(); }
@@ -120,7 +151,7 @@ public abstract class AbstractEnemyAI : MonoBehaviour
         currentState.Update();
     }
 
-    protected void pushNewState(AIState newState)
+    public void pushNewState(AIState newState)
     {
         currentState.OnSuspend();
         stateStack.Push(newState);
@@ -135,7 +166,7 @@ public abstract class AbstractEnemyAI : MonoBehaviour
     }
 }
 
-public class BasicEnemyAI : AbstractEnemyAI
+public class BasicEnemyAI : AbstractEnemyAI, IAggroable
 {
     protected override void Start()
     {

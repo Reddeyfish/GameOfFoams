@@ -35,6 +35,11 @@ public class EnemyNavigation : MonoBehaviour {
         navAgent.SetDestination(queen.position);
     }
 
+    public void Seek(Vector3 position)
+    {
+        navAgent.SetDestination(position);
+    }
+
     public void ClearSeeking()
     {
         navAgent.ResetPath();

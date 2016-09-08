@@ -9,7 +9,10 @@ public class InputToMovement : MonoBehaviour
     IInput input;
 
     [SerializeField]
-    protected float speed;
+    protected float baseSpeed;
+    [System.NonSerialized]
+    public float speedMultiplier = 1;
+    public float speed { get { return baseSpeed * speedMultiplier; } }
 
     [SerializeField]
     protected float acceleration;

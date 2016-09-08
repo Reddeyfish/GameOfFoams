@@ -7,7 +7,7 @@ public class PlayerSpawner : MonoBehaviour {
     protected Transform playerPrefab;
 
     [SerializeField]
-    protected Transform basicAttackPrefab;
+    protected Transform[] weapons;
 
     [SerializeField]
     protected Transform healthBarPrefab;
@@ -49,8 +49,11 @@ public class PlayerSpawner : MonoBehaviour {
         }
         health.Construct();
         health.SetMaxHealth(maxHealth);
-
-        (Instantiate(basicAttackPrefab, result.Find("WeaponsHolder")) as Transform).Reset();
+        Transform weaponsHolder = result.Find("WeaponsHolder");
+        foreach (Transform weapon in weapons)
+        {
+            (Instantiate(weapon, weaponsHolder) as Transform).Reset();
+        }
         return result;
     }
 }

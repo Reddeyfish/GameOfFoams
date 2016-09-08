@@ -12,7 +12,7 @@ public interface IInput : IWeaponsInput
     Vector3 movementInput { get; }
     float horizontalCameraInput { get; }
     float verticalCameraInput { get; }
-    
+    bool sprinting { get; }
 }
 
 [System.Serializable]
@@ -27,6 +27,8 @@ public class Bindings
 
     public string horizontalCameraAxis = Tags.Axis.horizontalMouse;
     public string verticalCameraAxis = Tags.Axis.verticalMouse;
+
+    public string sprintingAxis = Tags.Axis.sprint;
 }
 
 /// <summary>
@@ -61,6 +63,14 @@ public class NullInput : MonoBehaviour, IInput {
     }
 
     public bool basicAttack
+    {
+        get
+        {
+            return false;
+        }
+    }
+
+    public bool sprinting
     {
         get
         {
@@ -106,5 +116,13 @@ public abstract class AbstractAxisInput : MonoBehaviour, IInput
     public abstract bool basicAttack
     {
         get;
+    }
+
+    public bool sprinting
+    {
+        get
+        {
+            return Input.GetAxis(bindings.sprintingAxis) > 0.5f;
+        }
     }
 }

@@ -12,8 +12,11 @@ public static class Tags
     {
         public const string horizontal = "Horizontal";
         public const string vertical = "Vertical";
+
         public const string horizontalMouse = "HorizontalMouse";
         public const string verticalMouse = "VerticalMouse";
+
+        public const string sprint = "Sprint";
     }
 
     public static class Layers

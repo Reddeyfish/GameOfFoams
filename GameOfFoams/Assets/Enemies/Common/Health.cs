@@ -72,7 +72,7 @@ public class Health : MonoBehaviour, ITeamReference {
     /// <summary>
     /// If you don't know which one to use, use this one
     /// </summary>
-    /// <param name="amount"></param>
+    /// <param name="healingAmount"></param>
     /// <param name="teamReference"></param>
     /// <returns></returns>
     public bool Damage(float amount, ITeamReference teamReference)

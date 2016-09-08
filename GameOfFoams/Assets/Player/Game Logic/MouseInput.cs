@@ -17,5 +17,13 @@ public class MouseInput : AbstractAxisInput
             return Input.GetMouseButton(0);
         }
     }
+
+    public override bool heavyAttack
+    {
+        get
+        {
+            return Input.GetMouseButton(1);
+        }
+    }
 }
 

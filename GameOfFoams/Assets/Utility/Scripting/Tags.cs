@@ -17,6 +17,10 @@ public static class Tags
         public const string verticalMouse = "VerticalMouse";
 
         public const string sprint = "Sprint";
+        public const string interact = "Interact";
+        public const string beanBag = "BeanBag";
+        public const string taunt = "Taunt";
+        public const string potion = "Potion";
     }
 
     public static class Layers

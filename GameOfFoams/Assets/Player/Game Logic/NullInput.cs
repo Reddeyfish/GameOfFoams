@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface IWeaponsInput
+public interface IWeaponsInput //for AI control of player weapons?
 {
     bool basicAttack { get; }
+    bool heavyAttack { get; }
 }
 
 public interface IInput : IWeaponsInput
@@ -13,6 +14,10 @@ public interface IInput : IWeaponsInput
     float horizontalCameraInput { get; }
     float verticalCameraInput { get; }
     bool sprinting { get; }
+    bool interacting { get; }
+    bool beanBag { get; }
+    bool taunting { get; }
+    bool potion { get; }
 }
 
 [System.Serializable]
@@ -29,6 +34,10 @@ public class Bindings
     public string verticalCameraAxis = Tags.Axis.verticalMouse;
 
     public string sprintingAxis = Tags.Axis.sprint;
+    public string interactAxis = Tags.Axis.interact;
+    public string beanBagAxis = Tags.Axis.beanBag;
+    public string tauntAxis = Tags.Axis.taunt;
+    public string potionAxis = Tags.Axis.potion;
 }
 
 /// <summary>
@@ -70,7 +79,47 @@ public class NullInput : MonoBehaviour, IInput {
         }
     }
 
+    public bool heavyAttack
+    {
+        get
+        {
+            return false;
+        }
+    }
+
     public bool sprinting
+    {
+        get
+        {
+            return false;
+        }
+    }
+
+    public bool interacting
+    {
+        get
+        {
+            return false;
+        }
+    }
+
+    public bool beanBag
+    {
+        get
+        {
+            return false;
+        }
+    }
+
+    public bool taunting
+    {
+        get
+        {
+            return false;
+        }
+    }
+
+    public bool potion
     {
         get
         {
@@ -118,11 +167,48 @@ public abstract class AbstractAxisInput : MonoBehaviour, IInput
         get;
     }
 
+    public abstract bool heavyAttack
+    {
+        get;
+    }
+
     public bool sprinting
     {
         get
         {
             return Input.GetAxis(bindings.sprintingAxis) > 0.5f;
+        }
+    }
+
+    public bool interacting
+    {
+        get
+        {
+            return Input.GetAxis(bindings.interactAxis) > 0.5f;
+        }
+    }
+
+    public bool beanBag
+    {
+        get
+        {
+            return Input.GetAxis(bindings.beanBagAxis) > 0.5f;
+        }
+    }
+
+    public bool taunting
+    {
+        get
+        {
+            return Input.GetAxis(bindings.tauntAxis) > 0.5f;
+        }
+    }
+
+    public bool potion
+    {
+        get
+        {
+            return Input.GetAxis(bindings.potionAxis) > 0.5f;
         }
     }
 }

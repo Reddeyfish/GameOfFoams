@@ -4,6 +4,9 @@ using System.Collections.Generic;
 public class MainWeapon : MonoBehaviour {
 
     [SerializeField]
+    protected Transform impactVFX;
+
+    [SerializeField]
     protected float damage;
 
     [SerializeField]
@@ -52,6 +55,7 @@ public class MainWeapon : MonoBehaviour {
         foreach(Collider hit in hits)
         {
             hit.GetComponentInParent<Health>().Damage(damage, teamReference);
+            Instantiate(impactVFX, hit.transform.position, Quaternion.identity);
         }
     }
 

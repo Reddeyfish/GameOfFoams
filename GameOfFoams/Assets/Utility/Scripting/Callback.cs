@@ -44,7 +44,7 @@ public static class Callback {
                     yield return new WaitForSeconds(time);
                     break;
                 case Mode.REALTIME:
-                    yield return callingScript.StartCoroutine(WaitForRealSecondsRoutine(time));
+                    yield return new WaitForSecondsRealtime(time);
                     break;
             }
             code();
@@ -70,25 +70,6 @@ public static class Callback {
                     break;
             }
             code();
-        }
-
-        // TODO : replace with a YieldInstruction override
-
-        //same as WaitForSeconds(), but is not affected by timewarping
-        /// <summary>
-        /// Waits for the specified real time.
-        /// </summary>
-        /// <param name="seconds">The amount of time to wait.</param>
-        /// <returns></returns>
-        public static IEnumerator WaitForRealSecondsRoutine(float seconds)
-        {
-            float pauseStartTime = Time.realtimeSinceStartup;
-            float pauseEndTime = pauseStartTime + seconds;
-
-            while (Time.realtimeSinceStartup < pauseEndTime)
-            {
-                yield return 0;
-            }
         }
 
         //does a standard coroutine Lerp on a bit of code, from zero to one by default.
@@ -238,17 +219,6 @@ public static class Callback {
     public static Coroutine FireForUpdate(this CallbackMethod code, MonoBehaviour callingScript, Mode mode = Mode.UPDATE)
     {
         return RunIfActiveAndEnabled(callingScript, Routines.FireForUpdateRoutine(code, mode));
-    }
-
-    /// <summary>
-    /// Waits for the specified real time.
-    /// </summary>
-    /// <param name="seconds">The amount of time to wait.</param>
-    /// <param name="callingScript">The <see cref="MonoBehaviour"/> to run the Coroutine on.</param>
-    /// <returns></returns>
-    public static Coroutine WaitForRealSeconds(float seconds, MonoBehaviour callingScript)
-    {
-        return RunIfActiveAndEnabled(callingScript, Routines.WaitForRealSecondsRoutine(seconds));
     }
 
     /// <summary>

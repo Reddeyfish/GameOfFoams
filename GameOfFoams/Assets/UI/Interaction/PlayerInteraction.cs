@@ -25,6 +25,14 @@ public class PlayerInteraction : MonoBehaviour {
         interactionUI.gameObject.SetActive(false);
 	}
 
+    void OnDestroy()
+    {
+        if (interactionUI != null)
+        {
+            Destroy(interactionUI.gameObject);
+        }
+    }
+
     void Update()
     {
         if (targetInteractable != null && targetInteractable.IsInteractable)

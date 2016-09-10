@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface IWeaponsInput //for AI control of player weapons?
+public interface IWeaponsInput //for AI control of player modules?
 {
     bool basicAttack { get; }
     bool heavyAttack { get; }

@@ -39,6 +39,7 @@ public class Health : MonoBehaviour, ITeamReference {
     public event OnHit OnHitPublisher = delegate {};
 
     private IHealthDisplay healthDisplay;
+    private PlayerData playerData;
 
     float healthPercentage;
     public float HealthPercentage
@@ -54,9 +55,11 @@ public class Health : MonoBehaviour, ITeamReference {
 
     public void Construct()
     {
+        playerData = PlayerManagement.PlayerData;
         healthDisplay = healthDisplayHolder.GetComponentInChildren<IHealthDisplay>();
         deathActions = deathActionsHolder.GetComponentsInChildren<IDeathAction>();
         Hitpoints = startingHealthPercentage * maxHealth;
+        SetMaxHealth(playerData.maxHealth);
     }
 
     public void SetMaxHealth(float maxHealth)
@@ -97,6 +100,11 @@ public class Health : MonoBehaviour, ITeamReference {
                 death.Die();
             }
         }
+    }
+
+    public void OnDestroy()
+    {
+        Destroy(healthDisplayHolder.root.gameObject);
     }
 }
 

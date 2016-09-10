@@ -11,6 +11,7 @@ public class EntitySpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
+        /*
         PlayerSpawner playerSpawner = GetComponentInChildren<PlayerSpawner>();
         player = playerSpawner.Build(Vector3.zero, Quaternion.identity);
 
@@ -34,5 +35,6 @@ public class EntitySpawner : MonoBehaviour {
             Vector3 worldSpaceBarrierPosition = new Vector3(barrierPosition.x, 0, barrierPosition.y);
             enemySpawner.Build(worldSpaceBarrierPosition, Quaternion.identity);
         }
+         * */
 	}
 }

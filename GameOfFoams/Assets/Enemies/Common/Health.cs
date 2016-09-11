@@ -104,7 +104,10 @@ public class Health : MonoBehaviour, ITeamReference {
 
     public void OnDestroy()
     {
-        Destroy(healthDisplayHolder.root.gameObject);
+        if (healthDisplayHolder != null && healthDisplayHolder.root != null && healthDisplayHolder.root.gameObject != null)
+        {
+            Destroy(healthDisplayHolder.root.gameObject);
+        }
     }
 }
 

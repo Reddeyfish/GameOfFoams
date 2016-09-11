@@ -38,7 +38,6 @@ public class Interactable : MonoBehaviour {
         Assert.IsTrue(IsInteractable);
         IsInteractable = false;
         Callback.FireAndForget(() => IsInteractable = true, interactionCooldown, this);
-        Debug.Log("Interact");
         InteractEventPublisher();
     }
 }

@@ -68,7 +68,7 @@ public class PlayerManagement : MonoBehaviour
         }
         health.Construct();
 
-        Transform weaponsHolder = Player.Find("WeaponsHolder");
+        Transform weaponsHolder = Player.Find("CameraRotator/WeaponsHolder");
         foreach (Transform weapon in modules)
         {
             (Instantiate(weapon, weaponsHolder) as Transform).Reset();

@@ -29,7 +29,7 @@ public class EnemySpawner : MonoBehaviour {
         }
         health.Construct();
         health.SetMaxHealth(maxHealth);
-        result.GetComponent<EnemyNavigation>().Construct(player, queen);
+        //result.GetComponent<EnemyNavigation>().Construct(player, queen);
 
         Transform weaponsHolder = result.Find("WeaponsHolder");
 

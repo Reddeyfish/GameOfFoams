@@ -3,15 +3,18 @@ using UnityEngine.Assertions;
 using System.Collections;
 
 [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(Rigidbody))]
 public class EnemyNavigation : MonoBehaviour {
 
     NavMeshAgent navAgent;
+    Rigidbody rigid;
 
     Coroutine restoreNavigationRoutine = null;
 
 	// Use this for initialization
 	void Start () {
         navAgent = GetComponent<NavMeshAgent>();
+        rigid = GetComponent<Rigidbody>();
 	}
 
     /// <summary>
@@ -49,8 +52,10 @@ public class EnemyNavigation : MonoBehaviour {
     IEnumerator RestoreNavigationRoutine(float duration)
     {
         navAgent.updatePosition = false;
+        rigid.isKinematic = false;
         yield return new WaitForSeconds(duration);
         navAgent.updatePosition = true;
+        rigid.isKinematic = true;
         restoreNavigationRoutine = null;
     }
 }

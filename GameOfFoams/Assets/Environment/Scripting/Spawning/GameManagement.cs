@@ -22,7 +22,7 @@ public class GameManagement : MonoBehaviour {
     protected WaveManagement waveManagement;
     public WaveManagement WaveManagement { get { return waveManagement; } }
 
-    void Start()
+    void Awake()
     {
         Assert.IsNull(main);
         main = this;

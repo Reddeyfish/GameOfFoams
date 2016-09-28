@@ -2,5 +2,6 @@
 using System.Collections;
 
 [System.Serializable]
-public class QueenBaseBuildingData : HealthBaseBuildingData {
+public class BarricadeBaseBuildingData : HealthBaseBuildingData
+{
 }

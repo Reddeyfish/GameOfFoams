@@ -14,6 +14,10 @@ public class BaseData
 
 public interface IBaseBuildingData
 {
+    /// <summary>
+    /// Creates, initializes, and returns the Building.
+    /// </summary>
+    /// <returns>The created and initialized building.</returns>
     Transform Build();
 }
 
@@ -42,6 +46,36 @@ public abstract class RotationBaseBuildingData : BasicBaseBuildingData
     {
         Transform result = base.Build();
         result.rotation = Quaternion.LookRotation(forward);
+        return result;
+    }
+}
+
+[System.Serializable]
+public abstract class HealthBaseBuildingData : RotationBaseBuildingData
+{
+
+    [SerializeField]
+    protected Transform healthBarPrefab;
+
+    [SerializeField]
+    protected Transform[] deathActions;
+
+    [SerializeField]
+    public float maxHealth = 1f;
+
+    public override Transform Build()
+    {
+        Transform result = base.Build();
+
+        Health health = result.GetComponent<Health>();
+        (Instantiate(healthBarPrefab, health.healthDisplayHolder) as Transform).Reset();
+        foreach (Transform deathAction in deathActions)
+        {
+            (Instantiate(deathAction, health.deathActionsHolder) as Transform).Reset();
+        }
+        health.Construct();
+        health.SetMaxHealth(maxHealth);
+
         return result;
     }
 }
@@ -96,5 +130,11 @@ public class BaseManagement : MonoBehaviour {
     {
         DestroyBase();
         BuildBase();
+    }
+
+    public void AddBuiltBuilding(Transform building)
+    {
+        Assert.IsTrue(baseBuilt);
+        buildings.Add(building);
     }
 }

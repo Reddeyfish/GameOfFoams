@@ -51,10 +51,10 @@ public class EnemyNavigation : MonoBehaviour {
 
     IEnumerator RestoreNavigationRoutine(float duration)
     {
-        navAgent.updatePosition = false;
+        navAgent.enabled = false;
         rigid.isKinematic = false;
         yield return new WaitForSeconds(duration);
-        navAgent.updatePosition = true;
+        navAgent.enabled = true;
         rigid.isKinematic = true;
         restoreNavigationRoutine = null;
     }

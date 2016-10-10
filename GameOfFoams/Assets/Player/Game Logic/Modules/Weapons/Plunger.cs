@@ -71,9 +71,9 @@ public class Plunger : MonoBehaviour
             return; //target is invulnerable
         }
 
-        Instantiate(impactVFX, hitInfo.transform.position, Quaternion.identity);
+        Instantiate(impactVFX, hitInfo.point, Quaternion.identity);
         enemy.DisableNavigation(stunDuration);
-        enemyRigidbody.velocity = 100 * Vector3.up;
+        enemyRigidbody.velocity -= 20 * transform.forward;
         /*
         enemyRigidbody.AddForce(0, 0, upwardForce, ForceMode.VelocityChange);
         enemyRigidbody.AddForce(pullForce * (transform.position - enemyRigidbody.position).normalized, ForceMode.VelocityChange);

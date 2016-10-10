@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class Plunger : MonoBehaviour
 {
     [SerializeField]
-    protected Transform impactVFX;
+    protected GameObject impactVFX;
 
     [SerializeField]
     protected float damage = 1;

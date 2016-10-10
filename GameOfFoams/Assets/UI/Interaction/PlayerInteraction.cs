@@ -17,6 +17,7 @@ public class PlayerInteraction : MonoBehaviour {
     Collider target;
     Interactable targetInteractable;
 
+    float readyTime = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -42,6 +43,7 @@ public class PlayerInteraction : MonoBehaviour {
             if (input.interacting)
             {
                 targetInteractable.Interact();
+                readyTime = Time.time + 1;
             }
         }
         else
@@ -50,8 +52,7 @@ public class PlayerInteraction : MonoBehaviour {
         }
     }
 
-    void SetTarget(Collider target, Interactable targetInteractable)
-    {
+    void SetTarget(Collider target, Interactable targetInteractable) {
         this.target = target;
         this.targetInteractable = targetInteractable;
         Assert.IsTrue(targetInteractable.IsInteractable);
@@ -70,13 +71,17 @@ public class PlayerInteraction : MonoBehaviour {
 
     void OnTriggerStay(Collider col)
     {
+        if (Time.time < readyTime) {
+            return;
+        }
+
         if (col == target)
         {
             return;
         }
 
         Interactable interactable = col.GetComponentInParent<Interactable>();
-        if (interactable == null)
+        if (interactable == null || !interactable.IsInteractable)
         {
             return;
         }

@@ -27,7 +27,9 @@ public class EnemyNavigation : MonoBehaviour {
 
     public void SeekQueen()
     {
-        navAgent.SetDestination(Queen.Main.position);
+        if (navAgent.enabled) {
+            navAgent.SetDestination(Queen.Main.position);
+        }
     }
 
     public void Seek(Vector3 position)

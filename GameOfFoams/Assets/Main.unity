@@ -626,5 +626,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trapPlacementCameraHolder: {fileID: 1239638459}
-  trapPrefab: {fileID: 1000010090402090, guid: 50cb60919ad9dab47abfdb59f04797c7, type: 2}
+  trapPrefab: {fileID: 1000013430041712, guid: f358040fa96f83d4abb31f2234ddef50, type: 2}
   cooldown: 1

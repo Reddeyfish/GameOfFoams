@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 4bd12c06f4803da47aff3b1d55036d05
+timeCreated: 1485598722
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Eugene_Refernce:Eye_Master_Jnt
+    100004: Eugene_Refernce:Eye_Master_Jnt 1
+    100006: Eugene_Refernce:Head_Jnt
+    100008: Eugene_Refernce:Hip_Jnt
+    100010: Eugene_Refernce:Jaw_end_Jnt
+    100012: Eugene_Refernce:Jaw_Jnt
+    100014: Eugene_Refernce:L_Ankle_Jnt
+    100016: Eugene_Refernce:L_Ball_Jnt
+    100018: Eugene_Refernce:L_Clavicle_Jnt
+    100020: Eugene_Refernce:L_Elbow_Jnt
+    100022: Eugene_Refernce:L_Eye
+    100024: Eugene_Refernce:L_Hand_Jnt
+    100026: Eugene_Refernce:L_Index_Jnt_1
+    100028: Eugene_Refernce:L_Index_Jnt_2
+    100030: Eugene_Refernce:L_Index_Jnt_3
+    100032: Eugene_Refernce:L_Index_Jnt_4
+    100034: Eugene_Refernce:L_Knee_Jnt
+    100036: Eugene_Refernce:L_Leg_Jnt
+    100038: Eugene_Refernce:L_Middle_Jnt_1
+    100040: Eugene_Refernce:L_Middle_Jnt_2
+    100042: Eugene_Refernce:L_Middle_Jnt_3
+    100044: Eugene_Refernce:L_Middle_Jnt_4
+    100046: Eugene_Refernce:L_Palm_Jnt
+    100048: Eugene_Refernce:L_Pinky_Jnt_0
+    100050: Eugene_Refernce:L_Pinky_Jnt_1
+    100052: Eugene_Refernce:L_Pinky_Jnt_2
+    100054: Eugene_Refernce:L_Pinky_Jnt_3
+    100056: Eugene_Refernce:L_Pinky_Jnt_4
+    100058: Eugene_Refernce:L_Reverse_Ankle_Jnt
+    100060: Eugene_Refernce:L_Reverse_Ball_Jnt
+    100062: Eugene_Refernce:L_Reverse_End_Joint
+    100064: Eugene_Refernce:L_Reverse_Heel_Jnt
+    100066: Eugene_Refernce:L_Reverse_Toe_Jnt
+    100068: Eugene_Refernce:L_Ring_Jnt_1
+    100070: Eugene_Refernce:L_Ring_Jnt_2
+    100072: Eugene_Refernce:L_Ring_Jnt_3
+    100074: Eugene_Refernce:L_Ring_Jnt_4
+    100076: Eugene_Refernce:L_Shoulder_Jnt
+    100078: Eugene_Refernce:L_Thmb_Palm_Jnt
+    100080: Eugene_Refernce:L_Thumb_Jnt_1
+    100082: Eugene_Refernce:L_Thumb_Jnt_2
+    100084: Eugene_Refernce:L_Thumb_Jnt_3
+    100086: Eugene_Refernce:L_Toe_Jnt
+    100088: Eugene_Refernce:L_Wrist_Jnt
+    100090: Eugene_Refernce:Neck_Jnt_1
+    100092: Eugene_Refernce:Neck_Jnt_2
+    100094: Eugene_Refernce:Neck_Jnt_3
+    100096: Eugene_Refernce:Neck_Jnt_4
+    100098: Eugene_Refernce:R_Ankle_Jnt
+    100100: Eugene_Refernce:R_Ball_Jnt
+    100102: Eugene_Refernce:R_Clavicle_Jnt
+    100104: Eugene_Refernce:R_Elbow_Jnt
+    100106: Eugene_Refernce:R_Eye
+    100108: Eugene_Refernce:R_Hand_Jnt
+    100110: Eugene_Refernce:R_Index_Jnt_1
+    100112: Eugene_Refernce:R_Index_Jnt_2
+    100114: Eugene_Refernce:R_Index_Jnt_3
+    100116: Eugene_Refernce:R_Index_Jnt_4
+    100118: Eugene_Refernce:R_Knee_Jnt
+    100120: Eugene_Refernce:R_Leg_Jnt
+    100122: Eugene_Refernce:R_Middle_Jnt_1
+    100124: Eugene_Refernce:R_Middle_Jnt_2
+    100126: Eugene_Refernce:R_Middle_Jnt_3
+    100128: Eugene_Refernce:R_Middle_Jnt_4
+    100130: Eugene_Refernce:R_Palm_Jnt
+    100132: Eugene_Refernce:R_Pinky_Jnt_0
+    100134: Eugene_Refernce:R_Pinky_Jnt_1
+    100136: Eugene_Refernce:R_Pinky_Jnt_2
+    100138: Eugene_Refernce:R_Pinky_Jnt_3
+    100140: Eugene_Refernce:R_Pinky_Jnt_4
+    100142: Eugene_Refernce:R_Reverse_Ankle_Jnt1
+    100144: Eugene_Refernce:R_Reverse_Ball_Jnt
+    100146: Eugene_Refernce:R_Reverse_End_Joint
+    100148: Eugene_Refernce:R_Reverse_Heel_Jnt
+    100150: Eugene_Refernce:R_Reverse_Toe_Jnt
+    100152: Eugene_Refernce:R_Ring_Jnt_1
+    100154: Eugene_Refernce:R_Ring_Jnt_2
+    100156: Eugene_Refernce:R_Ring_Jnt_3
+    100158: Eugene_Refernce:R_Ring_Jnt_4
+    100160: Eugene_Refernce:R_Shoulder_Jnt
+    100162: Eugene_Refernce:R_Thmb_Palm_Jnt
+    100164: Eugene_Refernce:R_Thumb_Jnt_1
+    100166: Eugene_Refernce:R_Thumb_Jnt_2
+    100168: Eugene_Refernce:R_Thumb_Jnt_3
+    100170: Eugene_Refernce:R_Toe_Jnt
+    100172: Eugene_Refernce:R_Wrist_Jnt
+    100174: Eugene_Refernce:Root_Jnt
+    100176: Eugene_Refernce:Spine_Jnt_1
+    100178: Eugene_Refernce:Spine_Jnt_2
+    100180: Eugene_Refernce:Spine_Jnt_3
+    100182: Eugene_Refernce:Spine_Jnt_4
+    100184: Eugene_Refernce:Top_Head_Jnt
+    400000: //RootNode
+    400002: Eugene_Refernce:Eye_Master_Jnt
+    400004: Eugene_Refernce:Eye_Master_Jnt 1
+    400006: Eugene_Refernce:Head_Jnt
+    400008: Eugene_Refernce:Hip_Jnt
+    400010: Eugene_Refernce:Jaw_end_Jnt
+    400012: Eugene_Refernce:Jaw_Jnt
+    400014: Eugene_Refernce:L_Ankle_Jnt
+    400016: Eugene_Refernce:L_Ball_Jnt
+    400018: Eugene_Refernce:L_Clavicle_Jnt
+    400020: Eugene_Refernce:L_Elbow_Jnt
+    400022: Eugene_Refernce:L_Eye
+    400024: Eugene_Refernce:L_Hand_Jnt
+    400026: Eugene_Refernce:L_Index_Jnt_1
+    400028: Eugene_Refernce:L_Index_Jnt_2
+    400030: Eugene_Refernce:L_Index_Jnt_3
+    400032: Eugene_Refernce:L_Index_Jnt_4
+    400034: Eugene_Refernce:L_Knee_Jnt
+    400036: Eugene_Refernce:L_Leg_Jnt
+    400038: Eugene_Refernce:L_Middle_Jnt_1
+    400040: Eugene_Refernce:L_Middle_Jnt_2
+    400042: Eugene_Refernce:L_Middle_Jnt_3
+    400044: Eugene_Refernce:L_Middle_Jnt_4
+    400046: Eugene_Refernce:L_Palm_Jnt
+    400048: Eugene_Refernce:L_Pinky_Jnt_0
+    400050: Eugene_Refernce:L_Pinky_Jnt_1
+    400052: Eugene_Refernce:L_Pinky_Jnt_2
+    400054: Eugene_Refernce:L_Pinky_Jnt_3
+    400056: Eugene_Refernce:L_Pinky_Jnt_4
+    400058: Eugene_Refernce:L_Reverse_Ankle_Jnt
+    400060: Eugene_Refernce:L_Reverse_Ball_Jnt
+    400062: Eugene_Refernce:L_Reverse_End_Joint
+    400064: Eugene_Refernce:L_Reverse_Heel_Jnt
+    400066: Eugene_Refernce:L_Reverse_Toe_Jnt
+    400068: Eugene_Refernce:L_Ring_Jnt_1
+    400070: Eugene_Refernce:L_Ring_Jnt_2
+    400072: Eugene_Refernce:L_Ring_Jnt_3
+    400074: Eugene_Refernce:L_Ring_Jnt_4
+    400076: Eugene_Refernce:L_Shoulder_Jnt
+    400078: Eugene_Refernce:L_Thmb_Palm_Jnt
+    400080: Eugene_Refernce:L_Thumb_Jnt_1
+    400082: Eugene_Refernce:L_Thumb_Jnt_2
+    400084: Eugene_Refernce:L_Thumb_Jnt_3
+    400086: Eugene_Refernce:L_Toe_Jnt
+    400088: Eugene_Refernce:L_Wrist_Jnt
+    400090: Eugene_Refernce:Neck_Jnt_1
+    400092: Eugene_Refernce:Neck_Jnt_2
+    400094: Eugene_Refernce:Neck_Jnt_3
+    400096: Eugene_Refernce:Neck_Jnt_4
+    400098: Eugene_Refernce:R_Ankle_Jnt
+    400100: Eugene_Refernce:R_Ball_Jnt
+    400102: Eugene_Refernce:R_Clavicle_Jnt
+    400104: Eugene_Refernce:R_Elbow_Jnt
+    400106: Eugene_Refernce:R_Eye
+    400108: Eugene_Refernce:R_Hand_Jnt
+    400110: Eugene_Refernce:R_Index_Jnt_1
+    400112: Eugene_Refernce:R_Index_Jnt_2
+    400114: Eugene_Refernce:R_Index_Jnt_3
+    400116: Eugene_Refernce:R_Index_Jnt_4
+    400118: Eugene_Refernce:R_Knee_Jnt
+    400120: Eugene_Refernce:R_Leg_Jnt
+    400122: Eugene_Refernce:R_Middle_Jnt_1
+    400124: Eugene_Refernce:R_Middle_Jnt_2
+    400126: Eugene_Refernce:R_Middle_Jnt_3
+    400128: Eugene_Refernce:R_Middle_Jnt_4
+    400130: Eugene_Refernce:R_Palm_Jnt
+    400132: Eugene_Refernce:R_Pinky_Jnt_0
+    400134: Eugene_Refernce:R_Pinky_Jnt_1
+    400136: Eugene_Refernce:R_Pinky_Jnt_2
+    400138: Eugene_Refernce:R_Pinky_Jnt_3
+    400140: Eugene_Refernce:R_Pinky_Jnt_4
+    400142: Eugene_Refernce:R_Reverse_Ankle_Jnt1
+    400144: Eugene_Refernce:R_Reverse_Ball_Jnt
+    400146: Eugene_Refernce:R_Reverse_End_Joint
+    400148: Eugene_Refernce:R_Reverse_Heel_Jnt
+    400150: Eugene_Refernce:R_Reverse_Toe_Jnt
+    400152: Eugene_Refernce:R_Ring_Jnt_1
+    400154: Eugene_Refernce:R_Ring_Jnt_2
+    400156: Eugene_Refernce:R_Ring_Jnt_3
+    400158: Eugene_Refernce:R_Ring_Jnt_4
+    400160: Eugene_Refernce:R_Shoulder_Jnt
+    400162: Eugene_Refernce:R_Thmb_Palm_Jnt
+    400164: Eugene_Refernce:R_Thumb_Jnt_1
+    400166: Eugene_Refernce:R_Thumb_Jnt_2
+    400168: Eugene_Refernce:R_Thumb_Jnt_3
+    400170: Eugene_Refernce:R_Toe_Jnt
+    400172: Eugene_Refernce:R_Wrist_Jnt
+    400174: Eugene_Refernce:Root_Jnt
+    400176: Eugene_Refernce:Spine_Jnt_1
+    400178: Eugene_Refernce:Spine_Jnt_2
+    400180: Eugene_Refernce:Spine_Jnt_3
+    400182: Eugene_Refernce:Spine_Jnt_4
+    400184: Eugene_Refernce:Top_Head_Jnt
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Eugene_Refernce:Spine_Jnt_1' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'Eugene_Refernce:Spine_Jnt_4'
+      has translation animation that will be discarded.\n\t'Eugene_Refernce:Spine_Jnt_4'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Eugene_Refernce:R_Thmb_Palm_Jnt'
+      has translation animation that will be discarded.\n\t'Eugene_Refernce:R_Thmb_Palm_Jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Eugene_Refernce:R_Thumb_Jnt_1'
+      has translation animation that will be discarded.\n\t'Eugene_Refernce:R_Ring_Jnt_1'
+      has translation animation that will be discarded.\n\t'Eugene_Refernce:R_Middle_Jnt_1'
+      has translation animation that will be discarded.\n\t'Eugene_Refernce:R_Index_Jnt_1'
+      has translation animation that will be discarded.\n\t'Eugene_Refernce:R_Pinky_Jnt_1'
+      has translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Eugene_Refernce:L_Reverse_Ankle_Jnt
+        weight: 1
+      - path: Eugene_Refernce:L_Reverse_Ankle_Jnt/Eugene_Refernce:L_Reverse_Heel_Jnt
+        weight: 1
+      - path: Eugene_Refernce:L_Reverse_Ankle_Jnt/Eugene_Refernce:L_Reverse_Heel_Jnt/Eugene_Refernce:L_Reverse_Toe_Jnt
+        weight: 1
+      - path: Eugene_Refernce:L_Reverse_Ankle_Jnt/Eugene_Refernce:L_Reverse_Heel_Jnt/Eugene_Refernce:L_Reverse_Toe_Jnt/Eugene_Refernce:L_Reverse_Ball_Jnt
+        weight: 1
+      - path: Eugene_Refernce:L_Reverse_Ankle_Jnt/Eugene_Refernce:L_Reverse_Heel_Jnt/Eugene_Refernce:L_Reverse_Toe_Jnt/Eugene_Refernce:L_Reverse_Ball_Jnt/Eugene_Refernce:L_Reverse_End_Joint
+        weight: 1
+      - path: Eugene_Refernce:R_Reverse_Ankle_Jnt1
+        weight: 1
+      - path: Eugene_Refernce:R_Reverse_Ankle_Jnt1/Eugene_Refernce:R_Reverse_Heel_Jnt
+        weight: 1
+      - path: Eugene_Refernce:R_Reverse_Ankle_Jnt1/Eugene_Refernce:R_Reverse_Heel_Jnt/Eugene_Refernce:R_Reverse_Toe_Jnt
+        weight: 1
+      - path: Eugene_Refernce:R_Reverse_Ankle_Jnt1/Eugene_Refernce:R_Reverse_Heel_Jnt/Eugene_Refernce:R_Reverse_Toe_Jnt/Eugene_Refernce:R_Reverse_Ball_Jnt
+        weight: 1
+      - path: Eugene_Refernce:R_Reverse_Ankle_Jnt1/Eugene_Refernce:R_Reverse_Heel_Jnt/Eugene_Refernce:R_Reverse_Toe_Jnt/Eugene_Refernce:R_Reverse_Ball_Jnt/Eugene_Refernce:R_Reverse_End_Joint
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:L_Leg_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:L_Leg_Jnt/Eugene_Refernce:L_Knee_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:L_Leg_Jnt/Eugene_Refernce:L_Knee_Jnt/Eugene_Refernce:L_Ankle_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:L_Leg_Jnt/Eugene_Refernce:L_Knee_Jnt/Eugene_Refernce:L_Ankle_Jnt/Eugene_Refernce:L_Ball_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:L_Leg_Jnt/Eugene_Refernce:L_Knee_Jnt/Eugene_Refernce:L_Ankle_Jnt/Eugene_Refernce:L_Ball_Jnt/Eugene_Refernce:L_Toe_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:R_Leg_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:R_Leg_Jnt/Eugene_Refernce:R_Knee_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:R_Leg_Jnt/Eugene_Refernce:R_Knee_Jnt/Eugene_Refernce:R_Ankle_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:R_Leg_Jnt/Eugene_Refernce:R_Knee_Jnt/Eugene_Refernce:R_Ankle_Jnt/Eugene_Refernce:R_Ball_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:R_Leg_Jnt/Eugene_Refernce:R_Knee_Jnt/Eugene_Refernce:R_Ankle_Jnt/Eugene_Refernce:R_Ball_Jnt/Eugene_Refernce:R_Toe_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt/Eugene_Refernce:L_Index_Jnt_1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt/Eugene_Refernce:L_Index_Jnt_1/Eugene_Refernce:L_Index_Jnt_2
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt/Eugene_Refernce:L_Index_Jnt_1/Eugene_Refernce:L_Index_Jnt_2/Eugene_Refernce:L_Index_Jnt_3
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt/Eugene_Refernce:L_Index_Jnt_1/Eugene_Refernce:L_Index_Jnt_2/Eugene_Refernce:L_Index_Jnt_3/Eugene_Refernce:L_Index_Jnt_4
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt/Eugene_Refernce:L_Middle_Jnt_1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt/Eugene_Refernce:L_Middle_Jnt_1/Eugene_Refernce:L_Middle_Jnt_2
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt/Eugene_Refernce:L_Middle_Jnt_1/Eugene_Refernce:L_Middle_Jnt_2/Eugene_Refernce:L_Middle_Jnt_3
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt/Eugene_Refernce:L_Middle_Jnt_1/Eugene_Refernce:L_Middle_Jnt_2/Eugene_Refernce:L_Middle_Jnt_3/Eugene_Refernce:L_Middle_Jnt_4
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt/Eugene_Refernce:L_Ring_Jnt_1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt/Eugene_Refernce:L_Ring_Jnt_1/Eugene_Refernce:L_Ring_Jnt_2
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt/Eugene_Refernce:L_Ring_Jnt_1/Eugene_Refernce:L_Ring_Jnt_2/Eugene_Refernce:L_Ring_Jnt_3
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Palm_Jnt/Eugene_Refernce:L_Ring_Jnt_1/Eugene_Refernce:L_Ring_Jnt_2/Eugene_Refernce:L_Ring_Jnt_3/Eugene_Refernce:L_Ring_Jnt_4
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Pinky_Jnt_0
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Pinky_Jnt_0/Eugene_Refernce:L_Pinky_Jnt_1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Pinky_Jnt_0/Eugene_Refernce:L_Pinky_Jnt_1/Eugene_Refernce:L_Pinky_Jnt_2
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Pinky_Jnt_0/Eugene_Refernce:L_Pinky_Jnt_1/Eugene_Refernce:L_Pinky_Jnt_2/Eugene_Refernce:L_Pinky_Jnt_3
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Pinky_Jnt_0/Eugene_Refernce:L_Pinky_Jnt_1/Eugene_Refernce:L_Pinky_Jnt_2/Eugene_Refernce:L_Pinky_Jnt_3/Eugene_Refernce:L_Pinky_Jnt_4
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Thmb_Palm_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Thmb_Palm_Jnt/Eugene_Refernce:L_Thumb_Jnt_1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Thmb_Palm_Jnt/Eugene_Refernce:L_Thumb_Jnt_1/Eugene_Refernce:L_Thumb_Jnt_2
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:L_Clavicle_Jnt/Eugene_Refernce:L_Shoulder_Jnt/Eugene_Refernce:L_Elbow_Jnt/Eugene_Refernce:L_Wrist_Jnt/Eugene_Refernce:L_Hand_Jnt/Eugene_Refernce:L_Thmb_Palm_Jnt/Eugene_Refernce:L_Thumb_Jnt_1/Eugene_Refernce:L_Thumb_Jnt_2/Eugene_Refernce:L_Thumb_Jnt_3
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:Neck_Jnt_1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:Neck_Jnt_1/Eugene_Refernce:Neck_Jnt_2
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:Neck_Jnt_1/Eugene_Refernce:Neck_Jnt_2/Eugene_Refernce:Neck_Jnt_3
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:Neck_Jnt_1/Eugene_Refernce:Neck_Jnt_2/Eugene_Refernce:Neck_Jnt_3/Eugene_Refernce:Neck_Jnt_4
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:Neck_Jnt_1/Eugene_Refernce:Neck_Jnt_2/Eugene_Refernce:Neck_Jnt_3/Eugene_Refernce:Neck_Jnt_4/Eugene_Refernce:Head_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:Neck_Jnt_1/Eugene_Refernce:Neck_Jnt_2/Eugene_Refernce:Neck_Jnt_3/Eugene_Refernce:Neck_Jnt_4/Eugene_Refernce:Head_Jnt/Eugene_Refernce:Eye_Master_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:Neck_Jnt_1/Eugene_Refernce:Neck_Jnt_2/Eugene_Refernce:Neck_Jnt_3/Eugene_Refernce:Neck_Jnt_4/Eugene_Refernce:Head_Jnt/Eugene_Refernce:Eye_Master_Jnt/Eugene_Refernce:Eye_Master_Jnt
+          1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:Neck_Jnt_1/Eugene_Refernce:Neck_Jnt_2/Eugene_Refernce:Neck_Jnt_3/Eugene_Refernce:Neck_Jnt_4/Eugene_Refernce:Head_Jnt/Eugene_Refernce:Eye_Master_Jnt/Eugene_Refernce:Eye_Master_Jnt
+          1/Eugene_Refernce:L_Eye
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:Neck_Jnt_1/Eugene_Refernce:Neck_Jnt_2/Eugene_Refernce:Neck_Jnt_3/Eugene_Refernce:Neck_Jnt_4/Eugene_Refernce:Head_Jnt/Eugene_Refernce:Eye_Master_Jnt/Eugene_Refernce:Eye_Master_Jnt
+          1/Eugene_Refernce:R_Eye
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:Neck_Jnt_1/Eugene_Refernce:Neck_Jnt_2/Eugene_Refernce:Neck_Jnt_3/Eugene_Refernce:Neck_Jnt_4/Eugene_Refernce:Head_Jnt/Eugene_Refernce:Eye_Master_Jnt/Eugene_Refernce:Top_Head_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:Neck_Jnt_1/Eugene_Refernce:Neck_Jnt_2/Eugene_Refernce:Neck_Jnt_3/Eugene_Refernce:Neck_Jnt_4/Eugene_Refernce:Head_Jnt/Eugene_Refernce:Jaw_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:Neck_Jnt_1/Eugene_Refernce:Neck_Jnt_2/Eugene_Refernce:Neck_Jnt_3/Eugene_Refernce:Neck_Jnt_4/Eugene_Refernce:Head_Jnt/Eugene_Refernce:Jaw_Jnt/Eugene_Refernce:Jaw_end_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt/Eugene_Refernce:R_Index_Jnt_1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt/Eugene_Refernce:R_Index_Jnt_1/Eugene_Refernce:R_Index_Jnt_2
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt/Eugene_Refernce:R_Index_Jnt_1/Eugene_Refernce:R_Index_Jnt_2/Eugene_Refernce:R_Index_Jnt_3
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt/Eugene_Refernce:R_Index_Jnt_1/Eugene_Refernce:R_Index_Jnt_2/Eugene_Refernce:R_Index_Jnt_3/Eugene_Refernce:R_Index_Jnt_4
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt/Eugene_Refernce:R_Middle_Jnt_1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt/Eugene_Refernce:R_Middle_Jnt_1/Eugene_Refernce:R_Middle_Jnt_2
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt/Eugene_Refernce:R_Middle_Jnt_1/Eugene_Refernce:R_Middle_Jnt_2/Eugene_Refernce:R_Middle_Jnt_3
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt/Eugene_Refernce:R_Middle_Jnt_1/Eugene_Refernce:R_Middle_Jnt_2/Eugene_Refernce:R_Middle_Jnt_3/Eugene_Refernce:R_Middle_Jnt_4
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt/Eugene_Refernce:R_Ring_Jnt_1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt/Eugene_Refernce:R_Ring_Jnt_1/Eugene_Refernce:R_Ring_Jnt_2
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt/Eugene_Refernce:R_Ring_Jnt_1/Eugene_Refernce:R_Ring_Jnt_2/Eugene_Refernce:R_Ring_Jnt_3
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Palm_Jnt/Eugene_Refernce:R_Ring_Jnt_1/Eugene_Refernce:R_Ring_Jnt_2/Eugene_Refernce:R_Ring_Jnt_3/Eugene_Refernce:R_Ring_Jnt_4
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Pinky_Jnt_0
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Pinky_Jnt_0/Eugene_Refernce:R_Pinky_Jnt_1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Pinky_Jnt_0/Eugene_Refernce:R_Pinky_Jnt_1/Eugene_Refernce:R_Pinky_Jnt_2
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Pinky_Jnt_0/Eugene_Refernce:R_Pinky_Jnt_1/Eugene_Refernce:R_Pinky_Jnt_2/Eugene_Refernce:R_Pinky_Jnt_3
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Pinky_Jnt_0/Eugene_Refernce:R_Pinky_Jnt_1/Eugene_Refernce:R_Pinky_Jnt_2/Eugene_Refernce:R_Pinky_Jnt_3/Eugene_Refernce:R_Pinky_Jnt_4
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Thmb_Palm_Jnt
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Thmb_Palm_Jnt/Eugene_Refernce:R_Thumb_Jnt_1
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Thmb_Palm_Jnt/Eugene_Refernce:R_Thumb_Jnt_1/Eugene_Refernce:R_Thumb_Jnt_2
+        weight: 1
+      - path: Eugene_Refernce:Root_Jnt/Eugene_Refernce:Hip_Jnt/Eugene_Refernce:Spine_Jnt_1/Eugene_Refernce:Spine_Jnt_2/Eugene_Refernce:Spine_Jnt_3/Eugene_Refernce:Spine_Jnt_4/Eugene_Refernce:R_Clavicle_Jnt/Eugene_Refernce:R_Shoulder_Jnt/Eugene_Refernce:R_Elbow_Jnt/Eugene_Refernce:R_Wrist_Jnt/Eugene_Refernce:R_Hand_Jnt/Eugene_Refernce:R_Thmb_Palm_Jnt/Eugene_Refernce:R_Thumb_Jnt_1/Eugene_Refernce:R_Thumb_Jnt_2/Eugene_Refernce:R_Thumb_Jnt_3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 0537102d7e8f2b442ae5565a8374db61,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2,18 +2,18 @@
 using UnityEngine.Assertions;
 using System.Collections;
 
-[RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 [RequireComponent(typeof(Rigidbody))]
 public class EnemyNavigation : MonoBehaviour {
 
-    NavMeshAgent navAgent;
+    UnityEngine.AI.NavMeshAgent navAgent;
     Rigidbody rigid;
 
     Coroutine restoreNavigationRoutine = null;
 
 	// Use this for initialization
 	void Start () {
-        navAgent = GetComponent<NavMeshAgent>();
+        navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         rigid = GetComponent<Rigidbody>();
 	}
 
